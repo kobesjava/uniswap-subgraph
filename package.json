@@ -1,0 +1,25 @@
+{
+  "name": "uniswap-v3-subgraph",
+  "version": "1.0.0",
+  "repository": "https://github.com/graphprotocol/uniswap-v3-subgraph",
+  "license": "GPL-3.0-or-later",
+  "scripts": {
+    "test": "graph test",
+    "codegen": "graph codegen --output-dir src/types/",
+    "build": "graph build",
+    "create-testnet": "graph create dapdap/uniswap-v3-testnet --node https://graph-deploy.goerli.linea.build",
+    "deploy-testnet": "graph deploy dapdap/uniswap-v3-testnet --ipfs https://graph-ipfs.goerli.linea.build --node https://graph-deploy.goerli.linea.build",
+    "create-prd": "graph create dapdap/uniswap-v3 --node https://graph-deploy.linea.build",
+    "deploy-prd": "graph deploy dapdap/uniswap-v3 --ipfs https://graph-ipfs.linea.build --node https://graph-deploy.linea.build"
+  },
+  "devDependencies": {
+    "@graphprotocol/graph-cli": "^0.20.0",
+    "@graphprotocol/graph-ts": "^0.20.0",
+    "@typescript-eslint/eslint-plugin": "^2.0.0",
+    "@typescript-eslint/parser": "^2.0.0",
+    "eslint": "^6.2.2",
+    "eslint-config-prettier": "^6.1.0",
+    "prettier": "^1.18.2",
+    "typescript": "^3.5.2"
+  }
+}
