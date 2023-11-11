@@ -8,11 +8,11 @@ features:
 dataSources:
   - kind: ethereum/contract
     name: Factory
-    network: linea-goerli
+    network: linea-mainnet
     source:
-      address: '0xDB2783e6db8d47F2b1A51ef602608c2854a59dEF'
+      address: '0x31FAfd4889FA1269F7a13A66eE0fB458f27D72A9'
       abi: Factory
-      startBlock: 1916
+      startBlock: 25248
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.4
@@ -37,11 +37,11 @@ dataSources:
           handler: handlePoolCreated
   - kind: ethereum/contract
     name: NonfungiblePositionManager
-    network: linea-goerli
+    network: linea-mainnet
     source:
-      address: '0xBa2e5317CC21CF591d3908F703a855547cDc849f'
+      address: '0x4615C383F85D0a2BbED973d83ccecf5CB7121463'
       abi: NonfungiblePositionManager
-      startBlock: 1937
+      startBlock: 25264
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.4
@@ -71,7 +71,7 @@ dataSources:
 templates:
   - kind: ethereum/contract
     name: Pool
-    network: linea-goerli
+    network: linea-mainnet
     source:
       abi: Pool
     mapping:

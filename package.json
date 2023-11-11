@@ -9,8 +9,8 @@
     "build": "graph build",
     "create-testnet": "graph create dapdap/uniswap-v3-testnet --node https://graph-deploy.goerli.linea.build",
     "deploy-testnet": "graph deploy dapdap/uniswap-v3-testnet --ipfs https://graph-ipfs.goerli.linea.build --node https://graph-deploy.goerli.linea.build",
-    "create-prd": "graph create dapdap/uniswap-v3 --node https://graph-deploy.linea.build",
-    "deploy-prd": "graph deploy dapdap/uniswap-v3 --ipfs https://graph-ipfs.linea.build --node https://graph-deploy.linea.build"
+    "create-prd": "graph create dapdap/uniswap-v3-prd --node https://graph-deploy.linea.build",
+    "deploy-prd": "graph deploy dapdap/uniswap-v3-prd --ipfs https://graph-ipfs.linea.build --node https://graph-deploy.linea.build"
   },
   "devDependencies": {
     "@graphprotocol/graph-cli": "^0.20.0",
